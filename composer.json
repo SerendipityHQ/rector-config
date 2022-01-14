@@ -1,5 +1,5 @@
 {
-    "name": "serendipity_hq/integration-serendipity_hq-rector",
+    "name": "serendipity_hq/rector-config",
     "description": "Custom configuration for Rector used by Serendipity HQ.",
     "type": "library",
     "license": "MIT",
