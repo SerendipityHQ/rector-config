@@ -1,0 +1,27 @@
+{
+    "name": "serendipity_hq/integration-serendipity_hq-rector",
+    "description": "Custom configuration for Rector used by Serendipity HQ.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["rector"],
+    "homepage": "https://github.com/SerendipityHQ/rector-serendipity_hq",
+    "authors": [
+        {
+            "name": "Adamo Aerendir Crespi",
+            "email": "aerendir@serendipityhq.com"
+        }
+    ],
+    "require-dev": {
+        "php": "^7.4|^8.0",
+        "rector/rector": "0.12.12",
+        "symfony/dependency-injection": "^4.0|^5.0|^6.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "SerendipityHQ\\Integration\\Rector\\": "src/"
+        }
+    }
+}
