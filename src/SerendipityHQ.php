@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ParametersConfigur
 
 class SerendipityHQ
 {
-    public const SHQ_LIBRARY = __DIR__ . '/Sets/symfony-app.php';
+    public const SHQ_LIBRARY = __DIR__ . '/Sets/library.php';
     public const SHQ_LIBRARY_SKIP = [
         \Rector\CodeQuality\Rector\Catch_\ThrowWithPreviousExceptionRector::class,
         \Rector\CodeQuality\Rector\Concat\JoinStringConcatRector::class,

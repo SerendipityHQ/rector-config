@@ -14,13 +14,13 @@
 
 ## Current Status
 
-[![Phan](https://github.com/SerendipityHQ/rector-configr/workflows/Phan/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
-[![PHPStan](https://github.com/SerendipityHQ/rector-configr/workflows/PHPStan/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
-[![PSalm](https://github.com/SerendipityHQ/rector-configr/workflows/PSalm/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
-[![PHPUnit](https://github.com/SerendipityHQ/rector-configr/workflows/PHPunit/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
-[![Composer](https://github.com/SerendipityHQ/rector-configr/workflows/Composer/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
-[![PHP CS Fixer](https://github.com/SerendipityHQ/rector-configr/workflows/PHP%20CS%20Fixer/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
-[![Rector](https://github.com/SerendipityHQ/rector-configr/workflows/Rector/badge.svg)](https://github.com/SerendipityHQ/rector-configr/actions?query=branch%3Adev)
+[![Phan](https://github.com/SerendipityHQ/rector-config/workflows/Phan/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
+[![PHPStan](https://github.com/SerendipityHQ/rector-config/workflows/PHPStan/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
+[![PSalm](https://github.com/SerendipityHQ/rector-config/workflows/PSalm/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
+[![PHPUnit](https://github.com/SerendipityHQ/rector-config/workflows/PHPunit/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
+[![Composer](https://github.com/SerendipityHQ/rector-config/workflows/Composer/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
+[![PHP CS Fixer](https://github.com/SerendipityHQ/rector-config/workflows/PHP%20CS%20Fixer/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
+[![Rector](https://github.com/SerendipityHQ/rector-config/workflows/Rector/badge.svg)](https://github.com/SerendipityHQ/rector-config/actions?query=branch%3Adev)
 
 <hr />
 <h3 align="center">
