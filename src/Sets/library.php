@@ -31,7 +31,6 @@ return static function (ContainerConfigurator $containerConfigurator) : void {
     // $containerConfigurator->import(SetList::PHP_81);
     // $containerConfigurator->import(SetList::PRIVATIZATION);
     // $containerConfigurator->import(SetList::PSR_4);
-    $containerConfigurator->import(SetList::SAFE_07);
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
     // $containerConfigurator->import(SetList::TYPE_DECLARATION_STRICT);
     $containerConfigurator->import(SetList::UNWRAP_COMPAT);
