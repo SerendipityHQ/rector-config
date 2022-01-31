@@ -30,6 +30,8 @@ class SerendipityHQ
     ];
     public const SHQ_SYMFONY_BUNDLE = __DIR__ . '/Sets/symfony-bundle.php';
     public const SHQ_SYMFONY_BUNDLE_SKIP = [
+        // serendipity_hq/aws-ses-monitor
+        \Rector\CodeQuality\Rector\Array_\CallableThisArrayToAnonymousFunctionRector::class,
         \Rector\CodeQuality\Rector\Catch_\ThrowWithPreviousExceptionRector::class,
         \Rector\CodeQuality\Rector\Concat\JoinStringConcatRector::class,
         \Rector\CodeQuality\Rector\Identical\SimplifyBoolIdenticalTrueRector::class,
