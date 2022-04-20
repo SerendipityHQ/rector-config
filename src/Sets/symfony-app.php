@@ -3,10 +3,11 @@
 declare (strict_types=1);
 namespace SerendipityHQ\Integration\Rector\Sets;
 
+use Rector\Config\RectorConfig;
 use Rector\Core\Configuration\Option;
 use Rector\Set\ValueObject\SetList;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-return static function (ContainerConfigurator $containerConfigurator) : void {
+
+return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(SetList::ACTION_INJECTION_TO_CONSTRUCTOR_INJECTION);
     $containerConfigurator->import(SetList::CODE_QUALITY);
     $containerConfigurator->import(SetList::CODING_STYLE);
@@ -42,6 +43,6 @@ return static function (ContainerConfigurator $containerConfigurator) : void {
 
     $parameters = $containerConfigurator->parameters();
     $parameters->set(Option::AUTO_IMPORT_NAMES, true);
-    $parameters->set(Option::IMPORT_DOC_BLOCKS, true);
     $parameters->set(Option::IMPORT_SHORT_CLASSES, false);
+    $containerConfigurator->importNames();
 };
