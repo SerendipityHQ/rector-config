@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "keywords": ["rector"],
-    "homepage": "https://github.com/SerendipityHQ/rector-serendipity_hq",
+    "homepage": "https://github.com/SerendipityHQ/rector-config",
     "authors": [
         {
             "name": "Adamo Aerendir Crespi",
