@@ -27,6 +27,9 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+
+        // This conflicts with PHP CS Fixer
+        \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
     ];
     public const SHQ_SYMFONY_BUNDLE = __DIR__ . '/Sets/symfony-bundle.php';
     public const SHQ_SYMFONY_BUNDLE_SKIP = [
@@ -48,6 +51,9 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+
+        // This conflicts with PHP CS Fixer
+        \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
     ];
     public const SHQ_SYMFONY_APP = __DIR__ . '/Sets/symfony-app.php';
     public const SHQ_SYMFONY_APP_SKIP = [
@@ -67,6 +73,9 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+
+        // This conflicts with PHP CS Fixer
+        \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
     ];
 
     public static function buildToSkip(array ...$toSkip):array
