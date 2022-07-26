@@ -32,7 +32,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     // $containerConfigurator->import(SetList::PSR_4);
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
     // $containerConfigurator->import(SetList::TYPE_DECLARATION_STRICT);
-    $containerConfigurator->import(SetList::UNWRAP_COMPAT);
 
     $services = $containerConfigurator->services();
     $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector::class);
