@@ -38,8 +38,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
     $services->set(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
 
-    $parameters = $containerConfigurator->parameters();
-    $parameters->set(Option::AUTO_IMPORT_NAMES, true);
-    $parameters->set(Option::IMPORT_SHORT_CLASSES, false);
     $containerConfigurator->importNames();
+    $containerConfigurator->importShortClasses();
 };
