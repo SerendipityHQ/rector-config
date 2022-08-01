@@ -39,5 +39,5 @@ return static function (RectorConfig $containerConfigurator) : void {
     $services->set(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
 
     $containerConfigurator->importNames();
-    $containerConfigurator->importShortClasses();
+    $containerConfigurator->importShortClasses(false);
 };
