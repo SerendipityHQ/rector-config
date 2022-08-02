@@ -91,6 +91,8 @@ return static function (RectorConfig $containerConfigurator) : void {
 
     $containerConfigurator->import(PHPUnitLevelSetList::UP_TO_PHPUNIT_90);
 
+    $containerConfigurator->rule(\Rector\Symfony\Rector\Class_\CommandPropertyToAttributeRector::class);
+
     // $containerConfigurator->import(SetList::PRIVATIZATION);
     // $containerConfigurator->import(SetList::PSR_4);
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
