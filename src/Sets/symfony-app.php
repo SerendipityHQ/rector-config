@@ -4,7 +4,6 @@ declare (strict_types=1);
 namespace SerendipityHQ\Integration\Rector\Sets;
 
 use Rector\Config\RectorConfig;
-use Rector\Core\Configuration\Option;
 use Rector\Doctrine\Set\DoctrineSetList;
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\SetList;
@@ -83,9 +82,12 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_211);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_30);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_GEDMO_TO_KNPLABS);
-    // $containerConfigurator->import(\Rector\Doctrine\Set\DoctrineSetList::DOCTRINE_REPOSITORY_AS_SERVICE);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_ORM_29);
     $containerConfigurator->import(DoctrineSetList::ANNOTATIONS_TO_ATTRIBUTES);
+
+    // I'm not sure this is what we want
+    // Read this for more info: https://tomasvotruba.com/blog/2017/10/16/how-to-use-repository-with-doctrine-as-service-in-symfony/
+    // $containerConfigurator->import(\Rector\Doctrine\Set\DoctrineSetList::DOCTRINE_REPOSITORY_AS_SERVICE);
 
     $containerConfigurator->import(PHPUnitLevelSetList::UP_TO_PHPUNIT_90);
 
@@ -99,6 +101,7 @@ return static function (RectorConfig $containerConfigurator) : void {
     $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
     $services->set(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
 
+    $parameters = $containerConfigurator->parameters();
     $containerConfigurator->importNames();
     $containerConfigurator->importShortClasses(false);
 };
