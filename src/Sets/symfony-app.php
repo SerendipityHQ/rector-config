@@ -98,6 +98,15 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
     // $containerConfigurator->import(SetList::TYPE_DECLARATION_STRICT);
 
+    /*
+    // Waiting for this:
+    // https://github.com/thecodingmachine/safe/issues/375
+    $safeFilePathname = __DIR__ . '/../../../../thecodingmachine/safe/rector-migrate.php';
+    if(file_exists($safeFilePathname)) {
+        $containerConfigurator->import($safeFilePathname);
+    }
+    */
+
     $services = $containerConfigurator->services();
     $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector::class);
     $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
