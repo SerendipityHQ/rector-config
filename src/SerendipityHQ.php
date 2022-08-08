@@ -3,10 +3,6 @@
 declare (strict_types=1);
 namespace SerendipityHQ\Integration\Rector;
 
-use Rector\Core\Configuration\Option;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ParametersConfigurator;
-
 class SerendipityHQ
 {
     public const SHQ_LIBRARY = __DIR__ . '/Sets/library.php';
@@ -27,6 +23,7 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+        \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
@@ -51,6 +48,7 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+        \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
@@ -73,6 +71,7 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+        \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
