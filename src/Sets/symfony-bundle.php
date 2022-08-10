@@ -81,7 +81,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_210);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_211);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_30);
-    $containerConfigurator->import(DoctrineSetList::DOCTRINE_GEDMO_TO_KNPLABS);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_ORM_29);
     $containerConfigurator->import(DoctrineSetList::ANNOTATIONS_TO_ATTRIBUTES);
 
