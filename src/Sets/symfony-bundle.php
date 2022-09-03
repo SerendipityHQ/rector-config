@@ -71,8 +71,9 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(TwigSetList::TWIG_240);
     $containerConfigurator->import(TwigSetList::TWIG_UNDERSCORE_TO_NAMESPACE);
 
-    $containerConfigurator->import(SwiftmailerSetList::SWIFTMAILER_60);
-    $containerConfigurator->import(SwiftmailerSetList::SWIFTMAILER_TO_SYMFONY_MAILER);
+    // @todo Re-enable
+    // $containerConfigurator->import(SwiftmailerSetList::SWIFTMAILER_60);
+    // $containerConfigurator->import(SwiftmailerSetList::SWIFTMAILER_TO_SYMFONY_MAILER);
 
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_25);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_BEHAVIORS_20);
