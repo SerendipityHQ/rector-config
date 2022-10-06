@@ -12,6 +12,7 @@ class SerendipityHQ
         \Rector\CodeQuality\Rector\Identical\SimplifyBoolIdenticalTrueRector::class,
         \Rector\CodingStyle\Rector\Class_\AddArrayDefaultToArrayPropertyRector::class,
         \Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector::class,
+        \Rector\CodingStyle\Rector\ClassMethod\MakeInheritedMethodVisibilitySameAsParentRector::class,
         \Rector\CodingStyle\Rector\ClassMethod\NewlineBeforeNewAssignSetRector::class,
         \Rector\CodingStyle\Rector\ClassMethod\RemoveDoubleUnderscoreInMethodNameRector::class,
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
@@ -25,6 +26,7 @@ class SerendipityHQ
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
+
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
     ];
@@ -37,6 +39,7 @@ class SerendipityHQ
         \Rector\CodeQuality\Rector\Identical\SimplifyBoolIdenticalTrueRector::class,
         \Rector\CodingStyle\Rector\Class_\AddArrayDefaultToArrayPropertyRector::class,
         \Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector::class,
+        \Rector\CodingStyle\Rector\ClassMethod\MakeInheritedMethodVisibilitySameAsParentRector::class,
         \Rector\CodingStyle\Rector\ClassMethod\NewlineBeforeNewAssignSetRector::class,
         \Rector\CodingStyle\Rector\ClassMethod\RemoveDoubleUnderscoreInMethodNameRector::class,
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
@@ -60,6 +63,7 @@ class SerendipityHQ
         \Rector\CodeQuality\Rector\Identical\SimplifyBoolIdenticalTrueRector::class,
         \Rector\CodingStyle\Rector\Class_\AddArrayDefaultToArrayPropertyRector::class,
         \Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector::class,
+        \Rector\CodingStyle\Rector\ClassMethod\MakeInheritedMethodVisibilitySameAsParentRector::class,
         \Rector\CodingStyle\Rector\ClassMethod\NewlineBeforeNewAssignSetRector::class,
         \Rector\CodingStyle\Rector\ClassMethod\RemoveDoubleUnderscoreInMethodNameRector::class,
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
