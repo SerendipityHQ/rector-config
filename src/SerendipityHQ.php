@@ -24,8 +24,8 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+        \Rector\TypeDeclaration\Rector\ClassMethod\ArrayShapeFromConstantArrayReturnRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
-
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
@@ -51,6 +51,7 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+        \Rector\TypeDeclaration\Rector\ClassMethod\ArrayShapeFromConstantArrayReturnRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
@@ -75,6 +76,7 @@ class SerendipityHQ
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayParamDocTypeRector::class,
         \Rector\TypeDeclaration\Rector\ClassMethod\AddArrayReturnDocTypeRector::class,
+        \Rector\TypeDeclaration\Rector\ClassMethod\ArrayShapeFromConstantArrayReturnRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
