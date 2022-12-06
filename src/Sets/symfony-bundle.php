@@ -19,7 +19,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     // $containerConfigurator->import(SetList::DEAD_CODE);
     // $containerConfigurator->import(SetList::EARLY_RETURN);
     // $containerConfigurator->import(SetList::FLYSYSTEM_20);
-    $containerConfigurator->import(SetList::MONOLOG_20);
     // $containerConfigurator->import(SetList::NAMING);
     // $containerConfigurator->import(SetList::ORDER);
     $containerConfigurator->import(SetList::PHP_52);
