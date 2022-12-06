@@ -33,7 +33,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(SetList::PHP_80);
     $containerConfigurator->import(SetList::PHP_81);
 
-    $containerConfigurator->import(SymfonySetList::SYMFONY_STRICT);
     $containerConfigurator->import(SymfonySetList::SYMFONY_31);
     $containerConfigurator->import(SymfonySetList::SYMFONY_32);
     $containerConfigurator->import(SymfonySetList::SYMFONY_33);
