@@ -29,6 +29,9 @@ class SerendipityHQ
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
+
+        // Especially in tests, wrongly adds `never` as return type hint
+        \Rector\TypeDeclaration\Rector\ClassMethod\ReturnNeverTypeRector::class,
     ];
     public const SHQ_SYMFONY_BUNDLE = __DIR__ . '/Sets/symfony-bundle.php';
     public const SHQ_SYMFONY_BUNDLE_SKIP = [
@@ -56,6 +59,9 @@ class SerendipityHQ
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
+
+        // Especially in tests, wrongly adds `never` as return type hint
+        \Rector\TypeDeclaration\Rector\ClassMethod\ReturnNeverTypeRector::class,
     ];
     public const SHQ_SYMFONY_APP = __DIR__ . '/Sets/symfony-app.php';
     public const SHQ_SYMFONY_APP_SKIP = [
@@ -81,6 +87,9 @@ class SerendipityHQ
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
+
+        // Especially in tests, wrongly adds `never` as return type hint
+        \Rector\TypeDeclaration\Rector\ClassMethod\ReturnNeverTypeRector::class,
     ];
 
     public static function buildToSkip(array ...$toSkip):array
