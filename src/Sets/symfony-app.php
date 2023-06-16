@@ -13,7 +13,6 @@ use Rector\Symfony\Set\SymfonySetList;
 use Rector\Symfony\Set\TwigSetList;
 
 return static function (RectorConfig $containerConfigurator) : void {
-    $containerConfigurator->import(SetList::ACTION_INJECTION_TO_CONSTRUCTOR_INJECTION);
     $containerConfigurator->import(SetList::CODE_QUALITY);
     $containerConfigurator->import(SetList::CODING_STYLE);
     // $containerConfigurator->import(SetList::DEAD_CODE);
