@@ -7,8 +7,6 @@ use Rector\Config\RectorConfig;
 use Rector\Doctrine\Set\DoctrineSetList;
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\SetList;
-use Rector\Symfony\Set\SensiolabsSetList;
-use Rector\Symfony\Set\SwiftmailerSetList;
 use Rector\Symfony\Set\SymfonySetList;
 use Rector\Symfony\Set\TwigSetList;
 
@@ -51,14 +49,12 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(SymfonySetList::SYMFONY_54);
 
     $containerConfigurator->import(SymfonySetList::SYMFONY_60);
+    $containerConfigurator->import(SymfonySetList::SYMFONY_61);
+    $containerConfigurator->import(SymfonySetList::SYMFONY_62);
 
     $containerConfigurator->import(SymfonySetList::SYMFONY_CODE_QUALITY);
     $containerConfigurator->import(SymfonySetList::SYMFONY_CONSTRUCTOR_INJECTION);
     $containerConfigurator->import(SymfonySetList::ANNOTATIONS_TO_ATTRIBUTES);
-
-    $containerConfigurator->import(SensiolabsSetList::FRAMEWORK_EXTRA_40);
-    $containerConfigurator->import(SensiolabsSetList::FRAMEWORK_EXTRA_50);
-    $containerConfigurator->import(SensiolabsSetList::FRAMEWORK_EXTRA_61);
 
     $containerConfigurator->import(TwigSetList::TWIG_112);
     $containerConfigurator->import(TwigSetList::TWIG_127);
@@ -87,8 +83,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     // $containerConfigurator->import(\Rector\Doctrine\Set\DoctrineSetList::DOCTRINE_REPOSITORY_AS_SERVICE);
 
     $containerConfigurator->import(PHPUnitLevelSetList::UP_TO_PHPUNIT_90);
-
-    $containerConfigurator->rule(\Rector\Symfony\Rector\Class_\CommandPropertyToAttributeRector::class);
 
     // $containerConfigurator->import(SetList::PRIVATIZATION);
     // $containerConfigurator->import(SetList::PSR_4);
