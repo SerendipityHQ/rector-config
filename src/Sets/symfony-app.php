@@ -67,7 +67,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(TwigSetList::TWIG_UNDERSCORE_TO_NAMESPACE);
 
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_25);
-    $containerConfigurator->import(DoctrineSetList::DOCTRINE_BEHAVIORS_20);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_CODE_QUALITY);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_COMMON_20);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_210);
