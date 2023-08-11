@@ -17,10 +17,8 @@ class SerendipityHQ
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
         \Rector\CodingStyle\Rector\Switch_\BinarySwitchToIfElseRector::class,
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
-        \Rector\Php56\Rector\FunctionLike\AddDefaultValueForUndefinedVariableRector::class, // Maybe good one day
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
-        \Rector\TypeDeclaration\Rector\ClassMethod\ArrayShapeFromConstantArrayReturnRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
@@ -43,10 +41,8 @@ class SerendipityHQ
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
         \Rector\CodingStyle\Rector\Switch_\BinarySwitchToIfElseRector::class,
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
-        \Rector\Php56\Rector\FunctionLike\AddDefaultValueForUndefinedVariableRector::class, // Maybe good one day
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
-        \Rector\TypeDeclaration\Rector\ClassMethod\ArrayShapeFromConstantArrayReturnRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
@@ -67,10 +63,8 @@ class SerendipityHQ
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
         \Rector\CodingStyle\Rector\Switch_\BinarySwitchToIfElseRector::class,
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
-        \Rector\Php56\Rector\FunctionLike\AddDefaultValueForUndefinedVariableRector::class, // Maybe good one day
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
-        \Rector\TypeDeclaration\Rector\ClassMethod\ArrayShapeFromConstantArrayReturnRector::class,
         \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
