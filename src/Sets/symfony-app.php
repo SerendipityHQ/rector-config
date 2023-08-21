@@ -66,14 +66,13 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(TwigSetList::TWIG_240);
     $containerConfigurator->import(TwigSetList::TWIG_UNDERSCORE_TO_NAMESPACE);
 
-    $containerConfigurator->import(DoctrineSetList::DOCTRINE_25);
+    $containerConfigurator->import(DoctrineSetList::ANNOTATIONS_TO_ATTRIBUTES);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_CODE_QUALITY);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_COMMON_20);
-    $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_210);
+    $containerConfigurator->import(DoctrineSetList::DOCTRINE_ORM_25);
+    $containerConfigurator->import(DoctrineSetList::DOCTRINE_ORM_29);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_211);
     $containerConfigurator->import(DoctrineSetList::DOCTRINE_DBAL_30);
-    $containerConfigurator->import(DoctrineSetList::DOCTRINE_ORM_29);
-    $containerConfigurator->import(DoctrineSetList::ANNOTATIONS_TO_ATTRIBUTES);
 
     // I'm not sure this is what we want
     // Read this for more info: https://tomasvotruba.com/blog/2017/10/16/how-to-use-repository-with-doctrine-as-service-in-symfony/
@@ -95,12 +94,10 @@ return static function (RectorConfig $containerConfigurator) : void {
     }
     */
 
-    $services = $containerConfigurator->services();
-    $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector::class);
-    $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
-    $services->set(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
+    $containerConfigurator->rule(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector::class);
+    $containerConfigurator->rule(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
+    $containerConfigurator->rule(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
 
-    $parameters = $containerConfigurator->parameters();
     $containerConfigurator->importNames();
     $containerConfigurator->importShortClasses(false);
 };

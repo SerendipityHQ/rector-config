@@ -4,7 +4,6 @@ declare (strict_types=1);
 namespace SerendipityHQ\Integration\Rector\Sets;
 
 use Rector\Config\RectorConfig;
-use Rector\Core\Configuration\Option;
 use Rector\Set\ValueObject\SetList;
 
 return static function (RectorConfig $containerConfigurator) : void {
@@ -31,10 +30,9 @@ return static function (RectorConfig $containerConfigurator) : void {
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
     // $containerConfigurator->import(SetList::TYPE_DECLARATION_STRICT);
 
-    $services = $containerConfigurator->services();
-    $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector::class);
-    $services->set(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
-    $services->set(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
+    $containerConfigurator->rule(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector::class);
+    $containerConfigurator->rule(\Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class);
+    $containerConfigurator->rule(\Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector::class);
 
     $containerConfigurator->importNames();
     $containerConfigurator->importShortClasses(false);
