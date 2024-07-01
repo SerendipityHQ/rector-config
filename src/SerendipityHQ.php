@@ -18,7 +18,6 @@ class SerendipityHQ
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
-        \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
 
         // This conflicts with PHP CS Fixer
         \Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
@@ -41,7 +40,6 @@ class SerendipityHQ
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
-        \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
         \Rector\Symfony\Symfony43\Rector\StmtsAwareInterface\TwigBundleFilesystemLoaderToTwigRector::class,
 
         // This conflicts with PHP CS Fixer
@@ -62,7 +60,6 @@ class SerendipityHQ
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
-        \Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector::class,
         \Rector\Symfony\Symfony43\Rector\StmtsAwareInterface\TwigBundleFilesystemLoaderToTwigRector::class,
 
         // This conflicts with PHP CS Fixer
