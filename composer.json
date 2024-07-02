@@ -13,8 +13,8 @@
     ],
     "require-dev": {
         "php": "^7.4|^8.0",
-        "rector/rector": "^0.18.0",
-        "symfony/dependency-injection": "^4.0|^5.0|^6.0"
+        "rector/rector": "^1.2",
+        "symfony/dependency-injection": "^6.0|^7.0"
     },
     "config": {
         "sort-packages": true

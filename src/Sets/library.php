@@ -14,19 +14,6 @@ return static function (RectorConfig $containerConfigurator) : void {
     // $containerConfigurator->import(SetList::FLYSYSTEM_20);
     // $containerConfigurator->import(SetList::NAMING);
     // $containerConfigurator->import(SetList::ORDER);
-    $containerConfigurator->import(SetList::PHP_52);
-    $containerConfigurator->import(SetList::PHP_53);
-    $containerConfigurator->import(SetList::PHP_54);
-    $containerConfigurator->import(SetList::PHP_56);
-    $containerConfigurator->import(SetList::PHP_70);
-    $containerConfigurator->import(SetList::PHP_71);
-    $containerConfigurator->import(SetList::PHP_72);
-    $containerConfigurator->import(SetList::PHP_73);
-    // $containerConfigurator->import(SetList::PHP_74);
-    // $containerConfigurator->import(SetList::PHP_80);
-    // $containerConfigurator->import(SetList::PHP_81);
-    // $containerConfigurator->import(SetList::PRIVATIZATION);
-    // $containerConfigurator->import(SetList::PSR_4);
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
     // $containerConfigurator->import(SetList::TYPE_DECLARATION_STRICT);
 
