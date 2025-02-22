@@ -64,7 +64,6 @@ class SerendipityHQ
          \Rector\Naming\Rector\Foreach_\RenameForeachValueVariableToMatchExprVariableRector::class,
          \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
          \Rector\Symfony\Configs\Rector\Closure\ServiceSettersToSettersAutodiscoveryRector::class,
-         \Rector\Symfony\Configs\Rector\Closure\ServicesSetNameToSetTypeRector::class,
 
          // This causes an error
          \Rector\Symfony\Configs\Rector\Closure\ServiceArgsToServiceNamedArgRector::class,
