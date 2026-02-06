@@ -19,6 +19,7 @@ class SerendipityHQ
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\BareCreateMockAssignToDirectUseRector::class,
+        \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\NoSetupWithParentCallOverrideRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
 
         // This conflicts with PHP CS Fixer
@@ -42,6 +43,7 @@ class SerendipityHQ
         \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
         \Rector\Php74\Rector\Property\RestoreDefaultNullToNullableTypePropertyRector::class,
         \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\BareCreateMockAssignToDirectUseRector::class,
+        \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\NoSetupWithParentCallOverrideRector::class,
         \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
         \Rector\Symfony\Symfony43\Rector\StmtsAwareInterface\TwigBundleFilesystemLoaderToTwigRector::class,
 
@@ -68,6 +70,7 @@ class SerendipityHQ
          \Rector\Naming\Rector\Foreach_\RenameForeachValueVariableToMatchMethodCallReturnTypeRector::class,
          \Rector\Naming\Rector\Foreach_\RenameForeachValueVariableToMatchExprVariableRector::class,
          \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\BareCreateMockAssignToDirectUseRector::class,
+         \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\NoSetupWithParentCallOverrideRector::class,
          \Rector\Privatization\Rector\MethodCall\PrivatizeLocalGetterToPropertyRector::class,
          \Rector\Symfony\Configs\Rector\Closure\ServiceSettersToSettersAutodiscoveryRector::class,
          // This causes an error
