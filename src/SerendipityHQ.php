@@ -7,6 +7,7 @@ class SerendipityHQ
 {
     public const SHQ_LIBRARY = __DIR__ . '/Sets/library.php';
     public const SHQ_LIBRARY_SKIP = [
+        \Rector\CodeQuality\Rector\Attribute\SortAttributeNamedArgsRector::class,
         \Rector\CodeQuality\Rector\Catch_\ThrowWithPreviousExceptionRector::class,
         \Rector\CodeQuality\Rector\ClassMethod\LocallyCalledStaticMethodToNonStaticRector::class,
         \Rector\CodeQuality\Rector\Concat\JoinStringConcatRector::class,
@@ -32,6 +33,7 @@ class SerendipityHQ
     public const SHQ_SYMFONY_BUNDLE = __DIR__ . '/Sets/symfony-bundle.php';
     public const SHQ_SYMFONY_BUNDLE_SKIP = [
         // serendipity_hq/aws-ses-monitor
+        \Rector\CodeQuality\Rector\Attribute\SortAttributeNamedArgsRector::class,
         \Rector\CodeQuality\Rector\Catch_\ThrowWithPreviousExceptionRector::class,
         \Rector\CodeQuality\Rector\ClassMethod\LocallyCalledStaticMethodToNonStaticRector::class,
         \Rector\CodeQuality\Rector\Concat\JoinStringConcatRector::class,
@@ -56,6 +58,7 @@ class SerendipityHQ
         \Rector\TypeDeclaration\Rector\ClassMethod\ReturnNeverTypeRector::class,
     ];
     public const SHQ_SYMFONY_APP_SKIP = [
+         \Rector\CodeQuality\Rector\Attribute\SortAttributeNamedArgsRector::class,
          \Rector\CodeQuality\Rector\Catch_\ThrowWithPreviousExceptionRector::class,
          \Rector\CodeQuality\Rector\ClassMethod\LocallyCalledStaticMethodToNonStaticRector::class,
          \Rector\CodeQuality\Rector\Concat\JoinStringConcatRector::class,
