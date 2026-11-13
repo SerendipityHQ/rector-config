@@ -4,6 +4,9 @@ declare (strict_types=1);
 namespace SerendipityHQ\Integration\Rector\Sets;
 
 use Rector\Config\RectorConfig;
+use Rector\Php80\Rector\Class_\ClassPropertyAssignToConstructorPromotionRector;
+use Rector\Php81\Rector\Property\ReadOnlyPropertyRector;
+use Rector\Php82\Rector\Class_\ReadOnlyClassRector;
 use Rector\Doctrine\Set\DoctrineSetList;
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\PHPUnit\Set\PHPUnitSetList;
@@ -33,6 +36,11 @@ return static function (RectorConfig $containerConfigurator) : void {
 
     // $containerConfigurator->import(SetList::STRICT_BOOLEANS);
 
+
+    // Promoted and readonly properties: Rector applies each only when the project's PHP version supports it.
+    $containerConfigurator->rule(ClassPropertyAssignToConstructorPromotionRector::class);
+    $containerConfigurator->rule(ReadOnlyPropertyRector::class);
+    $containerConfigurator->rule(ReadOnlyClassRector::class);
 
     $containerConfigurator->importNames();
     $containerConfigurator->importShortClasses(false);
